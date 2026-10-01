@@ -2,9 +2,9 @@
 CREATE TABLE IF NOT EXISTS books (
     id             INTEGER PRIMARY KEY,
     title          TEXT NOT NULL,
-    author         TEXT,
+    author         TEXT NOT NULL,
     genre          TEXT NOT NULL,
     price          REAL NOT NULL,
-    stock          INTEGER,
-    published_year INTEGER
+    stock          INTEGER NOT NULL,
+    published_year INTEGER NOT NULL
 );
